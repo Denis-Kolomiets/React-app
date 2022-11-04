@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  font-size: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: lightgreen;
+}
+
+.button:disabled:hover {
+  background-color: rgba(146, 146, 146, 0.503);
+}

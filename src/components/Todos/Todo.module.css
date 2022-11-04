@@ -1,0 +1,57 @@
+.todoText {
+  word-break: break-all;
+  width: 100%;
+  text-align: left;
+}
+
+.todo {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  color: #112d49;
+  background-color: #fbfef9;
+  user-select: none;
+}
+
+.todoIcon {
+  font-size: 1.8em;
+  margin-right: 15px;
+  color: teal;
+}
+
+.iconeDelete,
+.iconeCheck {
+  font-size: 1.2em;
+  margin-right: 15px;
+  color: rgb(144, 144, 144);
+
+  transition: transform 0.3s;
+}
+.iconeDelete:hover,
+.iconeCheck:hover {
+  transform: scale(1.5);
+}
+.iconeDelete:hover {
+  color: rgb(249, 33, 33);
+}
+
+.iconeCheck:hover {
+  color: teal;
+}
+
+.completedTodo {
+  background-color: unset;
+  border-color: gray;
+  color: gray;
+}
+
+.todo.completedTodo .todoIcon,
+.todo.completedTodo .iconeCheck,
+.todo.completedTodo .iconeDelete {
+  color: gray;
+}
